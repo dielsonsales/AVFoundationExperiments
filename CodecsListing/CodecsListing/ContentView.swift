@@ -30,14 +30,14 @@ struct ContentView: View {
 								}
 							} label: {
 								VStack(alignment: .leading, spacing: 4) {
-									Text(encoder.codecName)
+									Text("Codec name: \(encoder.codecName)")
 										.font(.headline)
 
-									Text(encoder.displayName)
+									Text("Display name: \(encoder.displayName)")
 										.foregroundStyle(.secondary)
 
 									HStack {
-										Text(encoder.encoderID)
+										Text("Encoder ID: \(encoder.encoderID)")
 
 										Spacer()
 
